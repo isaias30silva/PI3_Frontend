@@ -13,7 +13,7 @@ const FormContainer = styled.form`
     box-shadow: 0px 0px 5px #ccc;
     border-radius: 5px;
     width: 100vw;
-    margin-rigth: 3%;
+    margin-left: 20px;
 `;
 
 const InputArea = styled.div`
@@ -40,6 +40,13 @@ const Button = styled.button`
     color: black;
     font-weight: bold;
     height: 42px;
+
+    /* Efeito hover */
+    &:hover {
+        font-size: 14px;
+        color: white;
+        background-color: black;
+    }
 `;
 
 const Form = ({ getUsers, onEdit, setOnEdit }) => {
@@ -116,8 +123,8 @@ const Form = ({ getUsers, onEdit, setOnEdit }) => {
                 <Input name="fone" />
             </InputArea>
             <InputArea>
-                <Label>E-mail</Label>
-                <Input name="email" type="email" />
+                <Label>Email/Site/Rede Social</Label>
+                <Input name="email" />
             </InputArea>
 
             <Button type="submit">SALVAR</Button>

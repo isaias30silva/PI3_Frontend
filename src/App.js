@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import Rodape from "./components/Rodape";
 
 const Container = styled.div`
   width: 100%;
@@ -14,6 +15,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  margin-left: 20px;
 `;
 
 const Title = styled.h2``;
@@ -46,6 +48,7 @@ function App() {
     </Container>
     <ToastContainer autoClose={3000} position="bottom-left" />
       <GlobalStyle />
+      <Rodape />
     </>
   );
 }

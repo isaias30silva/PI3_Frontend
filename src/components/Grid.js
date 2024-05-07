@@ -13,6 +13,7 @@ const Table = styled.table`
     word-break: break-all;
     margin-right: 3%;
     margin-top: 0px;
+    width: -webkit-fill-available;
 `;
 
 export const Thead = styled.thead``;
@@ -42,7 +43,7 @@ export const Td = styled.td`
     }
 `;
 
-const Grid = ({ users, setUsers, setOnEdit }) => {
+const Grid = ({ users, setUsers, setOnEdit, hideIcons }) => {
     const handleEdit = (item) => {
         setOnEdit(item);
     }
@@ -68,9 +69,9 @@ const Grid = ({ users, setUsers, setOnEdit }) => {
                     <Th>Nome</Th>
                     <Th>Endereço</Th>
                     <Th onlyWeb>Telefone</Th>
-                    <Th>Email</Th>
-                    <Th></Th>
-                    <Th></Th>
+                    <Th>Email/Site/Rede Social</Th>
+                    {hideIcons ? null : <Th></Th>}
+                    {hideIcons ? null : <Th></Th>}
                 </Tr>
             </Thead>
             <Tbody>
@@ -80,17 +81,20 @@ const Grid = ({ users, setUsers, setOnEdit }) => {
                         <Td width="40%">{item.endereco}</Td>
                         <Td width="12%" onlyWeb>{item.fone}</Td>
                         <Td width="50%">{item.email}</Td>
-                        <Td alignCenter width="5%">
-                            <FaEdit onClick={() => handleEdit(item)} />
-                        </Td>
-                        <Td alignCenter width="5%">
-                            <FaTrash onClick={() => handleDelete(item.id)} />
-                        </Td>
+                        {hideIcons ? null : (
+                            <>
+                                <Td alignCenter width="5%">
+                                    <FaEdit onClick={() => handleEdit(item)} />
+                                </Td>
+                                <Td alignCenter width="5%">
+                                    <FaTrash onClick={() => handleDelete(item.id)} />
+                                </Td>
+                            </>
+                        )}
                     </Tr>
                 ))}
             </Tbody>
         </Table>
-
     );
 };
 
