@@ -13,6 +13,7 @@
 A aplicação DEJAC - Descarte de Eletrônicos em Jacareí é um projeto que utiliza diversas tecnologias para apresentar dados referentes a locais de entrega voluntária de materiais eletrônicos em Jacareí.
 
 Ao acessar a aplicação, é possível obter informações relacionadas ao endereço, telefone e email dos locais, de forma a obter mais detalhes sobre o serviço de coleta e reciclagem, bem como realizar o agendamento da entrega e saber quais produtos podem ou não ser encaminhados para os pontos de entrega.
+
 </div>
 
 <div align="center">
@@ -25,6 +26,7 @@ Banco de Dados - Firebase Database (Nuvem)
 Utilização da API dos correios: `https://viacep.com.br/ws/${cep}/json/`
 Acessibilidade: narração dos textos da tela inicial, com a utilização do recurso speakText
 Controle de versão: Git/Github
+
 </div>
 
 <div align="center">
@@ -61,17 +63,23 @@ Também haverá um recurso de acessibilidade na tela inicial: um leitor de tela,
 
 **Acessar como Usuário**
 
-No acesso modo usuário, será possível visualizar informações sobre o descarte de eletrônicos, bem como uma tabela com os endereços cadastrados na aplicação. 
+No acesso modo usuário, será possível visualizar informações sobre o descarte de eletrônicos, bem como uma tabela com os endereços cadastrados na aplicação.
 
 **Acessar como Administrador**
 
-No acesso modo administrador, será necessário logar como administrador, inserido "admin" nos campos usuário e senha. 
-Na tela de cadastro, haverão campos a serem preenchidos. O campo "CEP" preencherá os campos Endereço, N.º, Bairro, Cidade e Estado automaticamente, caso o CEP seja válido (não inserir traço, apenas números).
-Caso o usuário inserida algo diferente de dígitos nos campos "Telefone" e "N.º", será exibido um alerta. 
-Ao clicar em "Salvar" o registro será exibido na tabela do campo "PONTOS DE ENTREGA VOLUNTÁRIA CADASTRADOS".
-Para remover um cadastro, basta clicar no ícone de lixeira localizado à direita da tabela, e para editar um cadastro, basta clicar no ícone de lápis da tabela. No mode de edição, os dados serão inseridos nos respectivos campos da cadastro da tabela referente ao campo "CADASTRO PONTO DE ENTREGA VOLUNTÁRIA". Após a edição, basta clicar no botão "SALVAR" para que as alterações sejam armazenadas no banco de dados. 
+No acesso modo administrador, será necessário logar como administrador, inserido "admin" nos campos usuário e senha.
 
 </div>
+
+- Na tela de cadastro, haverão campos a serem preenchidos. O campo "CEP" preencherá os campos Endereço, N.º, Bairro, Cidade e Estado automaticamente, caso o CEP seja válido (não inserir traço, apenas números).
+
+- Caso o usuário inserida algo diferente de dígitos nos campos "Telefone" e "N.º", será exibido um alerta.
+
+- Ao clicar em "Salvar" o registro será exibido na tabela do campo "PONTOS DE ENTREGA VOLUNTÁRIA CADASTRADOS".
+
+- Para remover um cadastro, basta clicar no ícone de lixeira localizado à direita da tabela, e para editar um cadastro, basta clicar no ícone de lápis da tabela.
+
+- No mode de edição, os dados serão inseridos nos respectivos campos da cadastro da tabela referente ao campo "CADASTRO PONTO DE ENTREGA VOLUNTÁRIA". Após a edição, basta clicar no botão "SALVAR" para que as alterações sejam armazenadas no banco de dados.
 
 **Equipe de desenvolvimento**
 
@@ -91,7 +99,7 @@ Para remover um cadastro, basta clicar no ícone de lixeira localizado à direit
     </td>
     <td align="center">
       <img src="imagens/Isaias.jpg" alt="Isaias" style="width: 100px; height: auto;">
-      <p>Isaias</p>
+      <p><a href="https://www.linkedin.com/in/isaias-menezes-silva/">Isaias</a></p>
     </td>
     <td align="center">
       <img src="imagens/Rodrigo_Azevedo.png" alt="Rodrigo" style="width: 100px; height: auto;">
@@ -103,7 +111,3 @@ Para remover um cadastro, basta clicar no ícone de lixeira localizado à direit
     </td>
   </tr>
 </table>
-
-
-
-
