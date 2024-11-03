@@ -133,5 +133,5 @@ No acesso modo administrador, será necessário logar como administrador, inseri
 
 **Universidade/Cursos**
 
-[UNIVESP - Universidade do Vale do Paraíba](https://univesp.br/)
-Cursos: Ciência de Dados, Engenharia de Computação, Tecnologia da Informação
+- [UNIVESP - Universidade do Vale do Paraíba](https://univesp.br/)
+- Cursos: Ciência de Dados, Engenharia de Computação, Tecnologia da Informação
