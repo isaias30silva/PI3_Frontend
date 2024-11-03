@@ -46,11 +46,32 @@ Visual Studio Code (VS Code)
 - Executar o comando `npm install`
 - Executar o comando `npm install firebase`
 - Executar o comando `npm install firebase-admin`
-- Para rodar o projeto, executar o comando `npm start`
-- Se tudo estiver funcionando corretamente, o back-end estará rodando na URL: [http://localhost:8800/](http://localhost:8800/) e apresentará a mensagem "Servidor está funcionando!"
+- Para rodar o projeto, executar o comando `npm run start`
+- Se tudo estiver funcionando corretamente, o back-end estará rodando na URL: [http://localhost:3000/](http://localhost:3000/) e apresentará a tela inicial da imagem acima.
 
-Com o funcionamento do backend, o próximo passo será baixar o projeto frontend, disponível em:  
-`git@github.com:isaias30silva/Univesp_Dejac.git`
+Com o funcionamento do frontend, o próximo passo será baixar o projeto backend, disponível em:  
+`git@github.com:isaias30silva/Univesp_DejacB.git`
+
+<div align="center">
+
+**Utilizando o sistema**
+
+Na tela inicial, haverão duas opções de acesso: "Acessar como Usuário" e "Acessar como Administrador".
+Também haverá um recurso de acessibilidade na tela inicial: um leitor de tela, que estará disponível no botão "Ativar Narração". Para encerrar o recurso de narração, basta clicar no botão "Desativar Narração".
+
+**Acessar como Usuário**
+
+No acesso modo usuário, será possível visualizar informações sobre o descarte de eletrônicos, bem como uma tabela com os endereços cadastrados na aplicação. 
+
+**Acessar como Administrador**
+
+No acesso modo administrador, será necessário logar como administrador, inserido "admin" nos campos usuário e senha. 
+Na tela de cadastro, haverão campos a serem preenchidos. O campo "CEP" preencherá os campos Endereço, N.º, Bairro, Cidade e Estado automaticamente, caso o CEP seja válido (não inserir traço, apenas números).
+Caso o usuário inserida algo diferente de dígitos nos campos "Telefone" e "N.º", será exibido um alerta. 
+Ao clicar em "Salvar" o registro será exibido na tabela do campo "PONTOS DE ENTREGA VOLUNTÁRIA CADASTRADOS".
+Para remover um cadastro, basta clicar no ícone de lixeira localizado à direita da tabela, e para editar um cadastro, basta clicar no ícone de lápis da tabela. No mode de edição, os dados serão inseridos nos respectivos campos da cadastro da tabela referente ao campo "CADASTRO PONTO DE ENTREGA VOLUNTÁRIA". Após a edição, basta clicar no botão "SALVAR" para que as alterações sejam armazenadas no banco de dados. 
+
+</div>
 
 **Equipe de desenvolvimento**
 
