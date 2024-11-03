@@ -111,7 +111,7 @@ No acesso modo administrador, será necessário logar como administrador, inseri
     </td>
     <td align="center">
       <img src="imagens/Rodrigo_Azevedo.png" alt="Rodrigo" style="width: 100px; height: auto;">
-      <p>Rodrigo</p>
+      <p><a href="https://www.linkedin.com/in/rodrigo-azevedo-0a541265/?trk=opento_sprofile_topcard">Rodrigo</a></p>
     </td>
     <td align="center">
       <img src="imagens/Rodolfo.jpg" alt="Rodolfo" style="width: 100px; height: auto;">
@@ -119,3 +119,19 @@ No acesso modo administrador, será necessário logar como administrador, inseri
     </td>
   </tr>
 </table>
+
+**Orientadora**
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="imagens/adria.jpg" alt="Adria Cristina da Silva" style="width: 100px; height: auto;">
+      <p>Adria Cristina da Silva</p>
+    </td>
+  </tr>
+</table>
+
+**Universidade/Cursos**
+
+[UNIVESP - Universidade do Vale do Paraíba](https://univesp.br/)
+Cursos: Ciência de Dados, Engenharia de Computação, Tecnologia da Informação
