@@ -1,31 +1,33 @@
-import GlobalStyle from "./styles/global";
-import styled from "styled-components";
-import Grid from "./components/Grid";
+import { collection, onSnapshot } from 'firebase/firestore';
 import { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import axios from "axios";
+import styled from "styled-components";
+import Grid from "./components/Grid";
 import ImageComponent from "./components/ImageComponent";
 import ImageRComponent from "./components/ImageRComponent";
 import ImageREComponent from "./components/ImageREComponent";
 import Rodape from "./components/Rodape";
+import { db } from "./firebaseConfig";
+import GlobalStyle from "./styles/global";
 
 function User() {
   const [users, setUsers] = useState([]);
   const [onEdit, setOnEdit] = useState(null);
 
-  const getUsers = async () => {
-    try {
-      const res = await axios.get("http://localhost:8800");
-      setUsers(res.data.sort((a, b) => (a.nome > b.nome ? 1 : -1)));
-    } catch (error) {
-      toast.error(error);
-    }
-  };
-
   useEffect(() => {
-    getUsers();
-  }, [setUsers]);
+    const unsubscribe = onSnapshot(collection(db, "users"), (snapshot) => {
+      const usersList = snapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setUsers(usersList.sort((a, b) => (a.nome > b.nome ? 1 : -1)));
+    }, (error) => {
+      toast.error("Erro ao carregar usuários: " + error.message);
+    });
+
+    return () => unsubscribe(); 
+  }, []);
 
   const Table = styled.table`
   background-color: #fff;
@@ -119,7 +121,7 @@ const Td = styled.td`
     <Container>
     <ImageComponent />
       <Title>Se você tem um computador, celular ou tablet que não utiliza mais, saiba que existem formas corretas e ecológicas de destinar esses tipos de produtos</Title>
-      <Title1>Não descarte-os no lixo comum</Title1>
+      <Title1>Não descarte no lixo comum</Title1>
       <Title2>Reunimos os endereços e contatos de empresas localizadas na cidade de Jacareí, e também, dos serviços públicos para que você possa ter em mãos essas informacões úteis sempre que precisar!</Title2>
       <Grid users={users} setUsers={setUsers} setOnEdit={setOnEdit} hideIcons={true} />
       <Title>Confira na tabela abaixo alguns exemplos de produtos que podem ser reciclados:</Title>

@@ -1,11 +1,9 @@
-// index.js
-
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Alteração aqui
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'; // Alteração aqui
+import App from './App';
 import HomePage from './components/Home';
 import GlobalStyle from "./styles/global";
-import App from './App';
 import User from './User';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
