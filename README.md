@@ -36,6 +36,7 @@ Ao acessar a aplicação, é possível obter informações relacionadas ao ender
 </div>
 
 - Visual Studio Code (VS Code)
+- NodeJS
 
 <div align="center">
 

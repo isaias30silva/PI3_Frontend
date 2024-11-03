@@ -11,7 +11,6 @@ const Table = styled.table`
   box-shadow: 0px 0px 5px #ccc;
   border-radius: 5px;
   margin: 20px auto;
-  word-break: break-all; 
   margin-right: 3%;
   margin-top: 0px;
   width: -webkit-fill-available;
@@ -27,7 +26,7 @@ export const Th = styled.th`
   text-align: start;
   border-bottom: inset;
   padding-bottom: 5px;
-  word-wrap: break-word; 
+  word-wrap: break-word;
   white-space: normal;
 
   @media (max-width: 500px) {
@@ -40,11 +39,11 @@ const Td = styled.td`
   padding-right: 20px;
   text-align: ${(props) => (props.alignCenter ? "center" : "start")};
   width: ${(props) => (props.width ? props.width : "auto")};
-  max-width: 200px; 
-  overflow: visible; 
-  text-overflow: clip; 
-  white-space: normal; 
-  word-break: normal; 
+  max-width: 200px;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+  overflow-wrap: break-word; // Adicione isso para quebra de linha adequada
 
   @media (max-width: 500px) {
     ${(props) => props.onlyWeb && "display: none"}
@@ -52,16 +51,16 @@ const Td = styled.td`
 `;
 
 const TrashIcon = styled(FaTrash)`
-  cursor: pointer; 
+  cursor: pointer;
   &:hover {
-    color: red; 
+    color: red;
   }
 `;
 
 const EditIcon = styled(FaEdit)`
-  cursor: pointer; 
+  cursor: pointer;
   &:hover {
-    color: orange; 
+    color: orange;
   }
 `;
 
@@ -127,9 +126,34 @@ const Grid = ({ users, setUsers, setOnEdit, hideIcons }) => {
             <Td width="12%" onlyWeb style={{ maxWidth: "60px" }}>
               {item.fone}
             </Td>
-            <Td width="50%" style={{ maxWidth: "100px" }}>
-              {item.email}
+            <Td width="20%" style={{ maxWidth: "100px" }}>
+              <a
+                href={
+                  item.email.startsWith("http")
+                    ? item.email
+                    : item.email.includes("@")
+                    ? `mailto:${item.email}`
+                    : `https://${item.email}`
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  overflowWrap: "break-word",
+                  cursor: "pointer",
+                }}
+              >
+                <span
+                  style={{ fontWeight: "normal" }}
+                  onMouseEnter={(e) => (e.target.style.fontWeight = "bold")}
+                  onMouseLeave={(e) => (e.target.style.fontWeight = "normal")}
+                >
+                  {item.email}
+                </span>
+              </a>
             </Td>
+
             {hideIcons ? null : (
               <>
                 <Td alignCenter width="5%">
