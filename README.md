@@ -10,32 +10,32 @@
 
 **Objetivo**
 
+</div>
+
 A aplicação DEJAC - Descarte de Eletrônicos em Jacareí é um projeto que utiliza diversas tecnologias para apresentar dados referentes a locais de entrega voluntária de materiais eletrônicos em Jacareí.
 
 Ao acessar a aplicação, é possível obter informações relacionadas ao endereço, telefone e email dos locais, de forma a obter mais detalhes sobre o serviço de coleta e reciclagem, bem como realizar o agendamento da entrega e saber quais produtos podem ou não ser encaminhados para os pontos de entrega.
-
-</div>
 
 <div align="center">
 
 **Tecnologias**
 
-Linguagem de desenvolvimento: JavaScript / TypeScript
-Linguagem de marcação e estilização: HTML, CSS
-Banco de Dados - Firebase Database (Nuvem)
-Utilização da API dos correios: `https://viacep.com.br/ws/${cep}/json/`
-Acessibilidade: narração dos textos da tela inicial, com a utilização do recurso speakText
-Controle de versão: Git/Github
-
 </div>
+
+- Linguagem de desenvolvimento: JavaScript / TypeScript
+- Linguagem de marcação e estilização: HTML, CSS
+- Banco de Dados - Firebase Database (Nuvem)
+- Utilização da API dos correios: `https://viacep.com.br/ws/${cep}/json/`
+- Acessibilidade: narração dos textos da tela inicial, com a utilização do recurso speakText
+- Controle de versão: Git/Github
 
 <div align="center">
 
 **Ferramenta de desenvolvimento**
 
-Visual Studio Code (VS Code)
-
 </div>
+
+Visual Studio Code (VS Code)
 
 <div align="center">
 
@@ -58,12 +58,20 @@ Com o funcionamento do frontend, o próximo passo será baixar o projeto backend
 
 **Utilizando o sistema**
 
+</div>
+
 Na tela inicial, haverão duas opções de acesso: "Acessar como Usuário" e "Acessar como Administrador".
 Também haverá um recurso de acessibilidade na tela inicial: um leitor de tela, que estará disponível no botão "Ativar Narração". Para encerrar o recurso de narração, basta clicar no botão "Desativar Narração".
 
+<div align="center">
+
 **Acessar como Usuário**
 
+</div>
+
 No acesso modo usuário, será possível visualizar informações sobre o descarte de eletrônicos, bem como uma tabela com os endereços cadastrados na aplicação.
+
+<div align="center">
 
 **Acessar como Administrador**
 
