@@ -94,13 +94,17 @@ No acesso modo administrador, será necessário logar como administrador, inseri
 
 <table>
   <tr>
+  <td align="center">
+      <img src="imagens/bianca.jpg" alt="Bianca Pacheco" style="width: 100px; height: auto;">
+      <p>Bianca Pacheco</p>
+    </td>
     <td align="center">
       <img src="imagens/Bruno_Gabriel.jpg" alt="Bruno Gabriel" style="width: 100px; height: auto;">
-      <p>Bruno Gabriel</p>
+      <p><a href="https://github.com/Brun0Gabriel">Bruno Gabriel</a></p>
     </td>
     <td align="center">
       <img src="imagens/Bruno_Malvao.jpg" alt="Bruno Malvão" style="width: 100px; height: auto;">
-      <p>Bruno Malvão</p>
+      <p><a href="https://www.linkedin.com/in/brunoaraujom/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Bruno Malvão</p>
     </td>
     <td align="center">
       <img src="imagens/Denise_Fachini.jpg" alt="Denise" style="width: 100px; height: auto;">
@@ -116,7 +120,7 @@ No acesso modo administrador, será necessário logar como administrador, inseri
     </td>
     <td align="center">
       <img src="imagens/Rodolfo.jpg" alt="Rodolfo" style="width: 100px; height: auto;">
-      <p>Rodolfo</p>
+      <p><a href="https://www.linkedin.com/in/rodolfo-almeida-8a1790176/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Rodolfo</p>
     </td>
   </tr>
 </table>
